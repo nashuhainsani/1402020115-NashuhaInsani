@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- bootstrap 3 and affix -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- end  -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>1402020115 Tokopedia</title>
+    </head>
+
+    <body>
+        <div id="overlay"></div>
+
+        <div class="header">
+            <div class="item-header-1 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img class="mr-2" src="img/Mobile.png" alt="" width="10%">
+                    <span>Download Tokopedia App</span>
+                </div>
+
+                <div class="d-flex">
+                    <span class="mr-4">Tentang Tokopedia</span>
+                    <span class="mr-4">Mitra Tokopedia</span>
+                    <span class="mr-4">Mulai Berjualan</span>
+                    <span class="mr-4">Promo</span>
+                    <span class="mr-4">Tokopedia Care</span>
+                </div>
+            </div>
+
+            <div class="item-header-2 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="img-tokopedia" src="img/Tokopedia Logo.png" alt="">
+                    <span class="mx-2 text-kategori" onclick="kategoriOn()">Kategori</span>
+                    <div class="wrap-search">
+                        <input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal"
+                            data-target="#exampleModal">
+                        <div class=" wrap-icon-search">
+                            <img class="img-search" src="img/Search.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="wrap-img-shop mx-3" onclick="on()">
+                        <img class="img-shop" src="img/Cart.png" alt="">
+                    </div>
+
+                    <span class="mr-3 line">|</span>
+
+                    <div class="d-flex">
+                        <button class="btn font-weight-bold mr-3">Masuk</button>
+                        <button class="btn font-weight-bold text-white">Daftar</button>
+                    </div>
+                </div>
+                <div class="text-under-search d-flex mt-2">
+                    <span class="mr-3">Meja Lipat</span>
+                    <span class="mr-3">Kandang Kucing</span>
+                    <span class="mr-3">Kompor Tanam</span>
+                    <span class="mr-3">Lampu Tidur</span>
+                    <span class="mr-3">Meja TV</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- caraousel -->
+        <div id="carouselExampleIndicators" class="carousel slide d-flex flex-column align-items-center"
+            data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide/4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- kategori pilihan -->
+        <div class="kategori-pilihan">
+            <div class="row mx-0 p-0">
+                <div class="col-6 mx-0 p-0">
+                    <h1>Kategori Pilihan</h1>
+                    <div id="carouselExampleControls" class="carousel carousel2 slide mt-4" data-ride="carousel">
+                        <div class="carousel-inner carousel-inner2">
+                            <div class="carousel-item active">
+                                <div class="row mx-0 p-0">
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+                                            <img src="img/Food.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Toy.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Bag.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Shoes.jpg" alt="" width="99%">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row mx-0 p-0">
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+                                            <img src="img/Food.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Toy.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr-2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Bag.jpg" alt="" width="92%">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-0 pr2">
+                                        <div
+                                            class="d-flex p-2 flex-column align-items-center justify-content-center card-category">
+
+                                            <img src="img/Shoes.jpg" alt="" width="99%">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h1>Top Up & Tagihan <span style="font-size: 16px; color: #03ac0e;">Lihat Semua</span> </h1>
+                    <div class="row mx-0 overflow-hidden border mt-4" style="border-radius: 12px;">
+                        <div class="d-flex justify-content-between align-items-center w-100 border-bottom">
+                            <div class="item-menu w-100 h-100 d-flex align-items-center justify-content-center" id="pulsa">
+                                <span class="item-menu">Pulsa</span>
+                            </div>
+                            <div class="item-menu w-100 h-100 d-flex align-items-center justify-content-center" id="paketData">
+                                <span class="item-menu">Paket data</span>
+                            </div>
+                            <div class="item-menu w-100 h-100 d-flex align-items-center justify-content-center">
+                                <span class="item-menu">Listrik PLN</span>
+                            </div>
+                            <div class="item-menu w-100 h-100 d-flex align-items-center justify-content-center">
+                                <span class="item-menu">Flight</span>
+                            </div>
+                            <div class="item-menu d-flex px-2 align-items-center justify-content-center border-left">
+                                <img src="img/Titik Tiga.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="d-flex w-100 justify-content-between align-items-end p-3">
+                            <div class="form-row mx-0 w-100">
+                                <div class="form-group w-100 mr-3 mb-0">
+                                    <label for="noTelp" class="font-weight-bold">Nomor Telepon</label>
+                                    <input type="text" id="noTelp" class="form-control w-100" placeholder="081234567890">
+                                </div>
+                            </div>
+                            <div class="form-row mx-0 w-100">
+                                <div class="form-group w-100 mr-3 mb-0">
+                                    <label for="" class="font-weight-bold">Nominal</label>
+                                    <select name="pulsa" id="nominalSelect" class="form-control" disabled>
+                                        <option value="1">1.000</option>
+                                        <option value="3">3.000</option>
+                                        <option value="5">5.000</option>
+                                        <option value="10">10.000</option>
+                                        <option value="20">20.000</option>
+                                        <option value="25">25.000</option>
+                                        <option value="50">50.000</option>
+                                        <option value="100">100.000</option>
+                                    </select>
+
+                                    <select name="paket" id="paketSelect" class="form-control" disabled hidden> 
+                                        <option value="1">Internet 10 GB - Rp30.500</option>
+                                        <option value="2">Internet 15 GB - Rp43.000</option>
+                                        <option value="3">Internet Combo Unlimited (Kuota Malam) - Rp20.000</option>
+                                        <option value="4">Internet Combo Unlimited - Rp70.000</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <button class="btn px-3" id="beliPulsaButton" style="background-color: #4950572e;">Beli</button>
+                           <button class="btn px-3" id="beliPaketButton" style="background-color: #4950572e;" hidden>Beli</button>
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex-nowrap mx-0 mt-4 menu-scroll">
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category.png" alt="" width="25%">
+                        <span class="ml-2">Kategori</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Phone & Tablet.png" alt="" width="15%">
+                        <span class="ml-2">Handphone & Tablet</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Top-up & Tagihan.png" alt="" width="15%">
+                        <span class="ml-2">Top-Up & Tagihan</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Travel & Entertainment.png" alt="" width="15%">
+                        <span class="ml-2">Travel & Entertainment</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Perawatan Hewan.png" alt="" width="15%">
+                        <span class="ml-2">Perawatan Hewan</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Keuangan.png" alt="" width="25%">
+                        <span class="ml-2">Keuangan</span>
+                    </div>
+                    <div class="item-scroll d-flex align-items-center border py-1 px-3 mr-2">
+                        <img src="img/Category Komputer & Laptop.png" alt="" width="15%">
+                        <span class="ml-2">Komputer & Laptop</span>
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="position-relative" style="top:170px">
+
+        <div class="traktiran">
+            <div class="col-6">
+                    <h1>Traktiran Pengguna Baru <span style="color: gray;">Berakhir Dalam </span> 
+                        <img src="img/Timer.jpg" alt="" width="20%">
+                        <span style="color: #03ac0e;">Lihat Semua</span>
+                    </h1>
+            </div>
+        </div>
+        <hr class="position-relative" style="top:170px">
+
+        <div class="traktiran">
+            <div class="col-6">
+                <h1>Kejar Diskon Spesial <span style="color: gray;">Berakhir Dalam </span>
+                    <img src="img/Timer.jpg" alt="" width="20%">
+                    <span style="color: #03ac0e;">Lihat Semua</span>
+                </h1>
+            </div>
+        </div>
+        <hr class="position-relative" style="top:170px">
+
+        <div class="traktiran">
+            <div class="col-6">
+                <h1>Official Store <span style="color: #03ac0e;">Lihat Semua</span> </h1>
+            </div>
+        </div>
+        </>
+        <script src="script/js.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
